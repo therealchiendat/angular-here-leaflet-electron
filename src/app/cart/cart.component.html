@@ -1,0 +1,39 @@
+<div class="container">
+  <h1>Cart</h1>
+
+  <div class="row">
+    <div class="column">
+      <span>
+        <button mat-stroked-button color="warn" class="bright" (click)="clearCart()">Clear Cart</button>
+        <button mat-stroked-button color="primary" routerLink="/shipping">Shipping Prices</button>
+      </span>
+
+      <div class="cart-item" *ngFor="let item of items">
+
+        <span>{{ item.name }}</span>
+        <span>{{ item.price | currency }}</span>
+      </div>
+    </div>
+    <div class="column">
+      <div class="sticky">
+        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+          <div>
+            <label>Name</label>
+            <input type="text" formControlName="name">
+          </div>
+
+          <div>
+            <label>Address</label>
+            <input type="text" formControlName="address">
+          </div>
+
+          <span>
+            <button mat-raised-button class="button" type="submit">Purchase</button>
+          </span>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

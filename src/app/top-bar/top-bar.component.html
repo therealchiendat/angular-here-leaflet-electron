@@ -1,0 +1,9 @@
+<div class="topbar">
+  <a aria-label="Logo" [routerLink]="['/']">
+    <h1>Dat's Angular Store</h1>
+  </a>
+  <span class="spacer"></span>
+
+  <a aria-label="Nearby" [routerLink]="['/nearby']"><mat-icon class="material-icons whiteicons">business</mat-icon></a>
+  <a aria-label="Cart" [routerLink]="['/cart']"><mat-icon matBadge={{items.length}} matBadgeSize="small" class="material-icons whiteicons">shopping_cart</mat-icon></a>
+</div>

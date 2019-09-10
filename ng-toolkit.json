@@ -1,0 +1,13 @@
+{
+  "serverless": {
+    "provider": "aws",
+    "project": "leaflet-project",
+    "skipInstall": false,
+    "directory": ".",
+    "clientProject": "leaflet-project",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}

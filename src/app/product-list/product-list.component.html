@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Products</h1>
+  <mat-list>
+    <div *ngFor="let product of products; index as productId">
+      <mat-nav-list>
+        <a mat-list-item aria-label="navigation" [routerLink]="['/products', productId]">
+
+            <h2 matLine [title]="product.name + ' details'">
+              {{ product.name }}
+            </h2>
+
+          <p matLine *ngIf="product.description" class="description">
+            Description: {{ product.description }}
+          </p>
+
+        </a>
+      </mat-nav-list>
+    </div>
+  </mat-list>
+</div>
+  <!--
+  Copyright Google LLC. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at http://angular.io/license
+  -->

@@ -1,0 +1,39 @@
+.picleft{
+  align-items:flex-start;
+  max-width:30vw;
+}
+
+  .column p {
+    font-size: 20px;
+  }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.background-picture {
+  margin-top: 50px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  margin-top: 20vw;
+  background-color: #ededed;
+}
+
+.top-detail {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+  margin-top: -10vw;
+  padding:20px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

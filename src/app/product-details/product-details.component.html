@@ -1,0 +1,22 @@
+<img class="background-picture" alt="background" src="./assets/{{product.picture}}background.jpg"/>
+
+<div class="container">
+    <div class="top-detail">
+      <div *ngIf="product">
+        <h3>{{ product.name }}</h3>
+        <div class="sticky">
+          <img class="picleft" alt="product picture" src="./assets/{{product.picture}}.jpg" />
+          <h4>{{ product.price | currency }}</h4>
+          <span>
+            <button mat-raised-button color="primary" (click)="addToCart(product)">
+              Add to Cart
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+        <p>{{ product.description }}</p>
+
+
+  
+</div>

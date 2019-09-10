@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h1>Shipping Prices</h1>
+    </div>
+    <div class="col-6">
+      <button class="return-button" mat-stroked-button [routerLink]="['/cart']"><i class="material-icons">keyboard_return</i>Back</button>
+    </div>
+  </div>
+  <div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+    <span>{{ shipping.type }}</span>
+    <span>{{ shipping.price | currency }}</span>
+  </div>
+</div>
